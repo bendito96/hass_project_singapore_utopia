@@ -1,0 +1,75 @@
+.titleHeader {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0%;
+    margin-top: 1% !important;
+    letter-spacing: -1px ;
+}
+
+hr{
+    margin: 0 !important;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    /* padding: 1%; */
+}
+
+/* .small_img{
+    max-width: 100%;
+    height: auto;
+} */
+
+.mini_news {
+    /* padding-top: 5%; */
+    margin-bottom: 10%;
+}
+
+.news_section_one{
+    margin-top: 2%;
+}
+
+.vr{
+    height: max-content !important;
+}
+
+.font{
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+}
+
+.newsHeader{
+    font-size: 19px;
+    font-weight: 550;
+    /* color: black; */
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+}
+
+.nav_brand_header{
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+    color: rgb(0, 32, 66);
+    font-weight: bold;
+}
+
+.article_header{
+    font-size: 35px;
+    color: black;
+    font-weight: 500;
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+}
+
+.article_passage{
+    color: black;
+    font-family: "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.navbar_black{
+    background-color: rgb(30, 30, 30) !important;
+}
+
+.navbar_white{
+    background-color: #ffffff !important;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet" />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Utopia Times</title>
+</head>
+
+<body style="display: none;">
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <p class="titleHeader text-black" id="utopiaHeader">THE UTOPIA TIMES</p>
+      <p class="titleHeader text-white" id="dystopiaHeader" style="display: none; background-color: rgb(30, 30, 30);">
+        THE DYSTOPIA TIMES</p>
+    </div>
+    <hr>
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary shadow-0" style="background-color: #ffffff !important;"
+      id="navBar">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarCenteredExample"
+          aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link  active" aria-current="page" href="home.html">SINGAPORE</a>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link">ASIA</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">WORLD</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">OPINION</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">LIFE</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">BUSINESS</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">TECH</div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link" href="#">SPORT</div>
+            </li>
+            <!-- Navbar dropdown -->
+            <li class="nav-item dropdown">
+              <a data-mdb-dropdown-init class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                aria-expanded="false">
+                MORE
+              </a>
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <div class="dropdown-item" href="#">VIDEO</div>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <div class="dropdown-item" href="#">PODCAST</div>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <div class="dropdown-item" href="#">MEDIA</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+        <!-- Checked switch -->
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck" value="True"
+            onclick=toggleButton() checked />
+          <label class="form-check-label" for="flexSwitchCheck"></label>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <hr>
+  </div>
+
+  <div id="utopiaNews" class="text-black">
+    <div class="container-fluid news_section_one">
+      <div class="row mt-5 ms-5 me-5">
+
+        <div class="col-2 font ms-5">
+          <h4><b>TOP STORIES</b></h4>
+          <div style="font-size: 13px;" class="m-2">TUESDAY 8 NOVEMBER 2050</div>
+          <hr>
+          <div style="font-size: 13px;" class="mt-2 ms-2 me-2">CLEAR WEATHER </div>
+          <div style="font-size: 13px;" class="mb-2 ms-2 me-2">SINGAPORE 31°C/24°C</div>
+          <hr>
+        </div>
+
+        <a onclick="navigateWithParams('news_article_one.html')"
+          style="text-decoration: none; color: inherit; display: block; width: 58%; height: 100%; cursor: pointer;">
+          <div class="row" href="news_article_one.html">
+            <div class="col-3 font">
+              <div class="row ps-2 newsHeader">
+                Singapore's floating platforms redefine urban expansion, setting a global standard in sustainability
+              </div>
+              Singapore's innovative floating platform technology has transformed the cityscape, enabling entire
+              neighborhoods to thrive on water.
+
+            </div>
+            <div class="col pe-4">
+              <img src="images/Futuristic_Singapore_with_Floating_Districts.png">
+            </div>
+          </div>
+        </a>
+
+        <div class="col-2 font">
+          <div class="row mini_news newsHeader">
+            The Festival of Summer has arrived in the city of Singapore
+          </div>
+          <hr>
+          <div class="row mini_news newsHeader">
+            Woman in her seventies reunites with long-lost friend named Tan Ah Juan
+          </div>
+          <hr>
+          <div class="row mini_news newsHeader">
+            Thomas More continues to inspire readers on how social structures could
+            promote greater fairness and well-being.
+          </div>
+
+          <hr>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-2 ms-5 font">
+        </div>
+        <a style="text-decoration: none; color: inherit; display: block; width: 19%; height: 100%; cursor: pointer;"
+          onclick="navigateWithParams('news_article_two.html')">
+          <div class="col ms-2">
+            <div class="row">
+              <img src="images/Realistic_Singapore_AI.png">
+            </div>
+            <div class="row newsHeader ps-2">
+              Singapore revolutionizes education and employment with artificial intelligence technology
+            </div>
+          </div>
+        </a>
+
+        <div class="col">
+          <div class="row">
+            <img src="images/persepolis.png">
+          </div>
+          <div class="row newsHeader p-2">
+            Persepolis captures global acclaim, earning Oscar nomination and Cannes jury prize
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <img src="images/Plutarch_Lives.png">
+          </div>
+          <div class="row newsHeader ps-2">
+            Plutarch's Lives provides readers with useful insights on ethics and personal development
+          </div>
+        </div>
+
+        <div class="col-3 font" style="padding-right: 10%; padding-left: 1.5%;">
+          <div class="row ps-2 newsHeader">
+            Singapore ranked happiest country in the world for twenty consecutive years.
+          </div>
+          Singapore has been named the happiest country for 2048-2049, according to the World Happiness Report 2050.
+        </div>
+      </div>
+    </div>
+    <hr class="m-5">
+
+    <div class="row">
+      <hr class="m-3">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <h3 class="font nav_brand_header">THE UTOPIA TIMES</h3>
+      </div>
+      <hr class="m-3">
+    </div>
+  </div>
+
+  <!-- DYSTOPIA -->
+  <div id="dystopiaNews" class="text-white" style="display: none; background-color: rgb(30, 30, 30);">
+    <div class="container-fluid news_section_one">
+      <div class="row mt-5 ms-5 me-5">
+
+        <div class="col-2 font ms-5">
+          <h4><b>TOP STORIES</b></h4>
+          <div style="font-size: 13px;" class="m-2">TUESDAY 8 NOVEMBER 2050</div>
+          <hr>
+          <div style="font-size: 13px;" class="mt-2 ms-2 me-2">STORMY WEATHER </div>
+          <div style="font-size: 13px;" class="mb-2 ms-2 me-2">SINGAPORE 36°C/32°C</div>
+          <hr>
+        </div>
+
+        <a onclick="navigateWithParams('news_article_three.html')"
+          style="text-decoration: none; color: inherit; display: block; width: 58%; height: 100%; cursor: pointer;">
+          <div class="row" href="news_article_one.html">
+            <div class="col-3 font">
+              <div class="row ps-2 newsHeader">
+                Singapore's expansion causes environmental degradation and species extinction
+              </div>
+              With nature reserves sacrificed for resources, Singapore's rapid expansion has sparked global debate and
+              controversy over environmental sacrifice
+
+            </div>
+            <div class="col pe-4">
+              <img src="images/nature_reserve_clearing.png">
+            </div>
+          </div>
+        </a>
+
+        <div class="col-2 font">
+          <div class="row mini_news newsHeader">
+            Some Singaporeans walk away from Utopia
+          </div>
+          <hr>
+          <div class="row mini_news newsHeader">
+            Woman in her seventies seeking help to find long-lost friend named Tan Ah Juan
+          </div>
+          <hr>
+          <div class="row mini_news newsHeader">
+            Thomas More: For things will never be perfect, until
+            human beings are perfect
+          </div>
+
+          <hr>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-2 ms-5 font">
+        </div>
+        <a style="text-decoration: none; color: inherit; display: block; width: 19%; height: 100%; cursor: pointer;"
+          onclick="navigateWithParams('news_article_four.html')">
+          <div class="col ms-2">
+            <div class="row">
+              <img src="images/Overworked_Hawker.png">
+            </div>
+            <div class="row newsHeader ps-2">
+              Singapore's hawker culture to close by 2030 as new employment system reshapes workforce
+            </div>
+          </div>
+        </a>
+
+        <div class="col">
+          <div class="row">
+            <img src="images/persepolis2.png">
+          </div>
+          <div class="row newsHeader ps-2">
+            Critics argue that Persepolis oversimplify and generalize aspects of Iranian culture
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <img src="images/Dystopian_Plutarch_Lives.png">
+          </div>
+          <div class="row newsHeader ps-2">
+            Plutarch's Lives raises questions about its reliability due to historical bias and inaccuracies
+          </div>
+        </div>
+
+        <div class="col-3 font" style="padding-right: 10%; padding-left: 1.5%;">
+          <div class="row ps-2 newsHeader">
+            Singapore falls into chaos as citizens clash over divided opinions on recent changes made  
+          </div>
+          Singapore faces turmoil as conflicting views on recent changes spark widespread unrest and division among its citizens.
+        </div>
+      </div>
+    </div>
+    <hr class="m-5">
+
+    <div class="row">
+      <hr class="m-3">
+      <div class="col-1"></div>
+      <div class="col-3">
+        <h3 class="font nav_brand_header text-white">THE DYSTOPIA TIMES</h3>
+      </div>
+      <hr class="m-3">
+    </div>
+  </div>
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"></script>
+  <script src="utopia.js"></script>
+</body>
+
+</html>

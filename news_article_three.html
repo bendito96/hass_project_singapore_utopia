@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.min.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(30, 30, 30);">
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-body-tertiary p-0 pt-1"
+            style="background-color: rgb(25, 25, 25) !important; ">
+            <div class="container" style="display: inline;">
+                <div class="row">
+                    <div class="col-3">
+                        <a class="navbar-brand" onclick="navigateWithParams('home.html');" style="cursor: pointer;">
+                            <h3 class="font nav_brand_header text-white">THE DYSTOPIA TIMES</h3>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <h3 style="margin-left: 50%; color: white;" class="font mt-1">SINGAPORE</h3>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-white">
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="row justify-content-center article_header text-center  text-white p-5">
+                    Singapore's Expansion causes environmental degradation and species extinction
+                </div>
+                <div class="row">
+                    <img src="images/nature_reserve_clearing.png">
+                    <div class="m-2"> With nature reserves sacrificed for resources, Singapore's rapid expansion has
+                        sparked global debate and controversy over environmental sacrifice </div>
+                </div>
+
+                <div class="row">
+                    <!-- <div class="col-1">
+
+                </div> -->
+                    <div class="col mt-5 mb-3 ms-5">
+                        <div class="nav_brand_header text-white">Benedict Chua</div>
+                        <div>SUTD Undergraduate </div>
+                    </div>
+                    <hr style="background-color: #8d1a00; border: none; height: 1px;">
+                </div>
+
+                <div class="row ms-4">
+                    <div>Updated Nov 08, 2050, 07:01 PM</div>
+                </div>
+
+                <div class="row m-5 font article_passage  text-white">
+                    <div>
+                        In a move that has captured global attention, Singapore has doubled in size over just a few
+                        short years—an achievement hailed as remarkable but not without controversy. As the city-state
+                        expands its footprint through innovative floating platforms and extensive new developments,
+                        questions have arisen regarding the resources fuelling this unprecedented growth. Recently
+                        released data reveals the answer, and it is both surprising and contentious.
+                        <br>
+                        <br>
+                        With natural resources becoming increasingly scarce in the year 2050 and prices for imports
+                        soaring, Singapore faced a difficult choice. Unable to afford the high cost of imported
+                        materials, the government turned to large-scale mining and resource harvesting on its own nature
+                        reserves and surrounding islands. 
+                        <br>
+                        <br>
+                        These areas, once dedicated to conservation, housed a rich
+                        diversity of plants, animals, and other species that are now under severe threat. Destruction of
+                        these habitats has led to habitat loss, pushing species to extinction and undoing years of
+                        conservation work. Reports estimate that at least six species have gone extinct as a result,
+                        causing large-scale ecosystem destabilization and a significant loss of biodiversity.
+                        <br>
+                        <br>
+                        Government officials have defended the decision as a necessary response to overpopulation. As
+                        the city’s population continued to soar, land for housing and infrastructure grew critically
+                        limited, and drastic measures became inevitable. The plan to use local resources was put to a
+                        public vote, with the majority supporting it due to overcrowding and increasing discomfort in
+                        daily life. 
+                        <br>
+                        <br>
+                        “It’s crazy eh, whenever I try to drive home from work in CBD (Central Business
+                        District) during peak hour, I would be stuck in a traffic jam for more than an hour. I think at this point you might as well not own a car anymore. Just harvest the materials
+                        from the nature reserves and expand Singapore already, who cares if some species goes extinct, they are
+                        not important anyway” said one resident from Bedok, who chose to remain anonymous.
+                        <br>
+                        <br>
+                        However, despite the majority supporting the plan, a vocal minority opposed it, going so far as to
+                        organize protests or relocate to another country to distance themselves from the cause.
+                        The situation has sparked a global debate on whether this was an appropriate trade-off to secure
+                        a higher quality of life in Singapore, or an irreversible loss to natural heritage? As nations
+                        observe Singapore’s bold land expansion, they confront a larger ethical question: how much is
+                        Singapore willing to sacrifice for growth and comfort?
+
+                    </div>
+                </div>
+                <hr style="background-color: #8d1a00; border: none; height: 1px;" class="m-5">
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <div class="row">
+            <hr class="m-3" style="background-color: #8d1a00; border: none; height: 1px;">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <h3 class="font nav_brand_header  text-white">THE DYSTOPIA TIMES</h3>
+            </div>
+            <hr class="m-3" style="background-color: #8d1a00; border: none; height: 1px;">
+        </div>
+    </div>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.0.0/mdb.umd.min.js"></script>
+    <script>
+        function navigateWithParams(newPage) {
+        const params = new URLSearchParams(window.location.search);
+        const newUrl = params.toString() ? `${newPage}?${params.toString()}` : newPage;
+        window.location.href = newUrl;
+        }
+    </script>
+</body>
+
+</html>
